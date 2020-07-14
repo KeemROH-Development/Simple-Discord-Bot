@@ -1,0 +1,7 @@
+{
+    "token":"token here",
+    "prefix":"!",
+    "administrators":[
+        "user id", "user id", "user id"
+    ]
+}
