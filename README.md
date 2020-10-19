@@ -1,5 +1,7 @@
 # Simple-Discord-Bot
-Simple discord bot with: Level system, custom prefix, command handler, and cooldowns!
+Simple discord bot with: custom prefix, command handler, and cooldowns!
+
+Edit: Removed level system, seemed useless :p
 
 ## Instructions:
 Step 1, Get a discord bot token from the discord developer portal <br>
