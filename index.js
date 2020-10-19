@@ -8,7 +8,6 @@ const express = require("express");
 const app = express();
 const fs = require("fs");
 const config = require("./config.json");
-const xp = require("./xp.json");
 const db = require("quick.db");
 
 app.get("/", (request, response) => {
@@ -114,34 +113,5 @@ client.on("message", message => {
   }
 });
 
-
-  client.on("message", async msg => {
-  if (msg.author.bot) return;
-  const addXp = Math.floor(Math.random() * 14);
-  if (!xp[msg.author.id]) {
-    xp[msg.author.id] = {
-      xp: 0,
-      level: 1,
-      totalXp: 0
-    };
-  }
-  xp[msg.author.id].xp = xp[msg.author.id].xp + addXp;
-  xp[msg.author.id].totalXp = xp[msg.author.id].xp;
-  let level = xp[msg.author.id].level * 40;
-  if (xp[msg.author.id].xp >= level) {
-    xp[msg.author.id].xp = 0;
-    xp[msg.author.id].level++;
-    msg.channel.send(
-      new Discord.MessageEmbed()
-        .setTitle("Level up!")
-        .setDescription(
-          `Congratulations! ${msg.author.username} you have leveled up to level ${xp[msg.author.id].level}!`
-        )
-    );
-  }
-  fs.writeFile("./xp.json", JSON.stringify(xp), err => {
-    if (err) console.log(err);
-  });
-}); 
 
 client.login(config.token);
