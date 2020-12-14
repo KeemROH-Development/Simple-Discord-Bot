@@ -46,13 +46,8 @@ const cooldowns = new Discord.Collection();
 
 
 client.on("message", message => {
-  let theprefix = config.prefix; 
-  let dbprefix = db.fetch(`prefix_${message.guild.id}`)
-  if (dbprefix) {
-    var prefix = dbprefix;
-  } else {
-    var prefix = config.prefix;
-  }
+  let prefix = config.prefix; 
+ 
     
   if (message.content.indexOf(prefix) !== 0) return;
   
