@@ -9,19 +9,14 @@ module.exports = {
   cooldown: 5, // Cooldown In Seconds
   guildOnly: false, // If Command In DMs return
   admin: false, // Bot Admin only
-  async execute(message, args, client) {
+  async execute(message, args, client) {    
+      let prefix = config.prefix
     
     
-    //this code is for custom prefixes
-    let dbprefix = db.fetch(`prefix_${message.guild.id}`);
-    if(dbprefix) {
-      var prefix = dbprefix
-    } else {
-      var prefix = config.prefix
-    }
-    //this code is for custom prefixes
-    
-    
-    message.channel.send(`**${prefix}help** - Shows all commands!\n**${prefix}setprefix <prefix>** - Change the prefix for this specfic server\n`);
+    const embed = new Discord.MessageEmbed()
+    .setTitle(`Help Menu`)
+    .setDescription(`The prefix for this server is ${prefix}`)
+    .addField(`General commands:`, `${prefix}help - Shows all the commands you can use!\n`);
+    message.channel.send(embed)
   }
 };

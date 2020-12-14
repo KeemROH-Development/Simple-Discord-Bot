@@ -10,10 +10,13 @@ const fs = require("fs");
 const config = require("./config.json");
 const db = require("quick.db");
 
-app.get("/", (request, response) => {
+/*
+ app.get("/", (request, response) => {
   console.log(Date.now() + " Ping Received");
   response.sendStatus(200);
 });
+*/
+
 var server = require("http").createServer(app);
 const listener = server.listen(process.env.PORT, function() {
   console.log("Your app is listening on port " + listener.address().port);
