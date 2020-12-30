@@ -1,7 +1,7 @@
 {
-  "name": "hello-sqlite",
+  "name": "simple-discord-bot",
   "version": "0.0.1",
-  "description": "A simple Node app with SQLite as a database management system, instantly up and running.",
+  "description": "A simple discord bot, mainly used as a template.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -15,12 +15,12 @@
     "node": "12.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/hello-sqlite"
+    "url": "https://github.com/KeemROH-Development/Simple-Discord-Bot/"
   },
   "license": "MIT",
   "keywords": [
     "node",
-    "glitch",
-    "express"
+    "bot",
+    "discord"
   ]
 }
