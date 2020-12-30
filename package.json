@@ -7,9 +7,9 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "x",
-    "graceful-fs": "x",
-    "discord.js": "12.x"
+    "discord.js": "^12.5.1",
+    "express": "^4.17.1",
+    "graceful-fs": "^4.2.4"
   },
   "engines": {
     "node": "12.x"
