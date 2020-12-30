@@ -8,7 +8,6 @@ const express = require("express");
 const app = express();
 const fs = require("fs");
 const config = require("./config.json");
-const db = require("quick.db");
 
 /*
  app.get("/", (request, response) => {

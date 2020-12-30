@@ -9,10 +9,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "fs": "^0.0.2",
-    "quick.db": "^7.1.1",
-    "discord.js": "12.x",
-    "better-sqlite3": "^7.1.0",
-    "util": "^0.12.3"
+    "discord.js": "12.x"
   },
   "engines": {
     "node": "12.x"

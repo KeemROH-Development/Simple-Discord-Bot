@@ -1,5 +1,4 @@
 const Discord = require("discord.js")
-const db = require('quick.db')
 const util = require('util')
 module.exports = {
 	name: 'eval',
