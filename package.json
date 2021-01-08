@@ -14,13 +14,12 @@
   "engines": {
     "node": "12.x"
   },
-  "repository": {
-    "url": "https://github.com/KeemROH-Development/Simple-Discord-Bot/"
-  },
+  "repository": "https://github.com/KeemROH-Development/Simple-Discord-Bot/",
   "license": "MIT",
   "keywords": [
     "node",
     "bot",
     "discord"
-  ]
+  ],
+  "author": "repl.it user <replituser@example.com>"
 }
